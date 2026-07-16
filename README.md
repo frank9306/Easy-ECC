@@ -25,27 +25,27 @@ Supported targets: Claude Code, Codex, Cursor, OpenCode, and generic Agent Skill
 Requires Node.js 20 or newer.
 
 ```bash
-npx easy-ecc-cli@0.0.1 install
+npx easy-ecc-cli@0.0.2 install
 ```
 
 Preview exactly what would be installed:
 
 ```bash
-npx easy-ecc-cli@0.0.1 install --agent codex --level standard --dry-run
+npx easy-ecc-cli@0.0.2 install --agent codex --level standard --dry-run
 ```
 
 Choose individual components:
 
 ```bash
-npx easy-ecc-cli@0.0.1 install --agent cursor --level custom \
+npx easy-ecc-cli@0.0.2 install --agent cursor --level custom \
   --components coding-style,git-workflow,security,verification-loop
 ```
 
 Inspect or safely remove an installation:
 
 ```bash
-npx easy-ecc-cli@0.0.1 status
-npx easy-ecc-cli@0.0.1 uninstall
+npx easy-ecc-cli@0.0.2 status
+npx easy-ecc-cli@0.0.2 uninstall
 ```
 
 The uninstaller checks SHA-256 hashes and keeps files that changed after installation.
@@ -68,11 +68,11 @@ When `--agent` is omitted, Easy ECC detects known project directories and otherw
 - The install plan is visible before network writes begin.
 - Existing files are never overwritten unless `--force` is provided.
 - Installed files and hashes are recorded in `.easy-ecc/state.json`.
-- MCP servers and high-permission hooks are intentionally excluded from 0.0.1.
+- MCP servers and high-permission hooks are intentionally excluded from 0.0.2.
 
 Easy ECC itself is MIT licensed. Downloaded ECC content remains governed by ECC's MIT License and upstream attribution. See [third-party notices](THIRD_PARTY_NOTICES.md).
 
-## Scope of 0.0.1
+## Scope of 0.0.2
 
 This first release proves the selective installation model. It installs common ECC rules and a curated set of self-contained skills. It does not attempt to translate every ECC command, hook, agent, or MCP configuration across incompatible runtimes.
 

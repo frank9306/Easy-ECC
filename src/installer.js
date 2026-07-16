@@ -58,7 +58,7 @@ export async function install({ root, agent, level, componentIds = [], force = f
   }
   const stateDir = path.join(root, ".easy-ecc");
   fs.mkdirSync(stateDir, { recursive: true });
-  fs.writeFileSync(path.join(stateDir, "state.json"), JSON.stringify({ version: "0.0.1", ecc: ECC.version, agent, level, files: records }, null, 2) + "\n");
+  fs.writeFileSync(path.join(stateDir, "state.json"), JSON.stringify({ version: "0.0.2", ecc: ECC.version, agent, level, files: records }, null, 2) + "\n");
   return records;
 }
 

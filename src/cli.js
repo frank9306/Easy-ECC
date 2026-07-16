@@ -11,7 +11,7 @@ function option(args, name, fallback) {
 }
 
 function help() {
-  console.log(`Easy ECC 0.0.1\n\nUsage:\n  easy-ecc install [--agent <name>] [--level <name>] [--components a,b] [--dry-run] [--force]\n  easy-ecc list\n  easy-ecc status\n  easy-ecc uninstall\n\nAgents: ${agents.join(", ")}\nLevels: ${Object.keys(levels).join(", ")}`);
+  console.log(`Easy ECC 0.0.2\n\nUsage:\n  easy-ecc install [--agent <name>] [--level <name>] [--components a,b] [--dry-run] [--force]\n  easy-ecc list\n  easy-ecc status\n  easy-ecc uninstall\n\nAgents: ${agents.join(", ")}\nLevels: ${Object.keys(levels).join(", ")}`);
 }
 
 async function promptChoice(question, choices, defaultValue) {

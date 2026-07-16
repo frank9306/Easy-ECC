@@ -1,6 +1,6 @@
 {
   "name": "easy-ecc-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A selective, cross-agent installer for Everything Claude Code (ECC).",
   "type": "module",
   "bin": {

@@ -4,50 +4,113 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Easy ECC — 为不同阶段的 Vibe Coding 用户选择性安装 ECC。">
-  <title>Easy ECC — 给 Vibe Coding 装上合适的护栏</title>
+  <title>Easy ECC — 按需安装 ECC 工程能力</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="nav">
-    <a class="brand" href="#top">Easy ECC <span>0.0.1</span></a>
-    <nav><a href="#profiles">安装级别</a><a href="#how">工作方式</a><a href="https://github.com/frank9306/Easy-ECC">GitHub</a></nav>
+    <a class="brand" href="#top" aria-label="Easy ECC 首页">Easy ECC <span>v0.0.2</span></a>
+    <nav aria-label="主导航">
+      <a href="#profiles">安装级别</a>
+      <a href="#workflow">工作方式</a>
+      <a class="github-link" href="https://github.com/frank9306/Easy-ECC">GitHub</a>
+    </nav>
   </header>
+
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">SELECTIVE ECC INSTALLER</p>
-      <h1>不是安装得更多。<br><em>是安装得刚刚好。</em></h1>
-      <p class="lead">Easy ECC 根据你的经验、项目和 AI Agent，从 <a href="https://github.com/affaan-m/ECC">Everything Claude Code</a> 中选择合适的工程护栏。</p>
-      <div class="actions"><button id="copy" data-command="npx easy-ecc-cli@0.0.1 install">npx easy-ecc-cli@0.0.1 install</button><a href="#profiles">查看安装级别 ↓</a></div>
-      <p class="support">Claude Code · Codex · Cursor · OpenCode · Agent Skills</p>
-    </section>
+      <div class="hero-copy">
+        <p class="overline">Everything Claude Code，按需安装</p>
+        <h1>给项目装上<br>合适的工程护栏。</h1>
+        <p class="lead">Easy ECC 根据你的经验、项目和 AI Agent，从 <a href="https://github.com/affaan-m/ECC">Everything Claude Code</a> 中挑选真正需要的规则、命令和技能。</p>
+        <div class="actions">
+          <button class="copy-command" data-command="npx easy-ecc-cli@0.0.2 install">
+            <span aria-hidden="true">$</span>
+            <code>npx easy-ecc-cli@0.0.2 install</code>
+            <span class="copy-label">复制</span>
+          </button>
+          <a href="#profiles">选择安装级别</a>
+        </div>
+        <p class="support">支持 Claude Code、Codex、Cursor、OpenCode 和 Agent Skills</p>
+      </div>
 
-    <section class="problem">
-      <p>ECC 是一座拥有数百种能力的工具库。</p>
-      <h2>Easy ECC 是入口、筛选器，也是安全带。</h2>
-      <div class="metrics"><div><b>5</b><span>安装级别</span></div><div><b>5</b><span>Agent 目标</span></div><div><b>0</b><span>运行时依赖</span></div><div><b>1</b><span>可审查安装计划</span></div></div>
-    </section>
-
-    <section id="profiles" class="profiles">
-      <div class="section-title"><p>按人选择，不按数量堆砌</p><h2>你在哪个阶段，就用哪一级。</h2></div>
-      <div class="profile-grid">
-        <article><span>01</span><h3>Lite</h3><p>初次使用 Vibe Coding。先建立编码、开发流程和 Git 安全底线。</p><code>--level lite</code></article>
-        <article class="featured"><span>02 · 推荐</span><h3>Standard</h3><p>独立完成真实项目。增加测试、安全、审查、上下文和验证能力。</p><code>--level standard</code></article>
-        <article><span>03</span><h3>Pro</h3><p>维护长期工程。加入架构决策、模式、性能和代码库理解能力。</p><code>--level pro</code></article>
-        <article><span>04</span><h3>Team</h3><p>多人或多 Agent 协作。增加安全扫描、评估和工程治理。</p><code>--level team</code></article>
+      <div class="terminal" aria-label="Easy ECC 命令行安装示例">
+        <div class="terminal-bar"><span>easy-ecc</span><span>~/my-project</span></div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> npx easy-ecc-cli install</p>
+          <p class="dim">Detected: Codex · Node.js project</p>
+          <p class="question">Choose an installation level</p>
+          <p class="selected">● Standard <span>Recommended</span></p>
+          <p class="dim">○ Lite</p>
+          <p class="dim">○ Pro</p>
+          <p class="dim">○ Team</p>
+          <div class="terminal-result">
+            <p><span class="ok">✓</span> Plan reviewed</p>
+            <p><span class="ok">✓</span> 12 components installed</p>
+            <p><span class="ok">✓</span> State saved for safe uninstall</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="how" class="how">
-      <div class="section-title"><p>一次安装，始终可解释</p><h2>先展示，再写入；能安装，也能干净离开。</h2></div>
-      <ol><li><b>检测</b><span>识别 Agent 和项目目录</span></li><li><b>选择</b><span>应用级别或自选组件</span></li><li><b>预览</b><span>显示来源版本与目标文件</span></li><li><b>记录</b><span>保存文件和 SHA-256</span></li><li><b>卸载</b><span>保留用户修改过的文件</span></li></ol>
+    <section class="proof" aria-label="产品特点">
+      <p><strong>先预览，再写入</strong><span>每个目标文件都可审查</span></p>
+      <p><strong>零运行时依赖</strong><span>安装后不拖慢项目</span></p>
+      <p><strong>安全卸载</strong><span>保留你修改过的文件</span></p>
+    </section>
+
+    <section id="profiles" class="profiles section">
+      <div class="section-heading">
+        <p class="overline">安装级别</p>
+        <h2>从你当前需要的能力开始。</h2>
+        <p>级别越高，覆盖的工程场景越完整。随时可以重新选择，不必一次装满。</p>
+      </div>
+      <div class="profile-grid">
+        <article>
+          <div><h3>Lite</h3><p>刚开始使用 Vibe Coding，建立编码、开发流程和 Git 安全底线。</p></div>
+          <code>--level lite</code>
+        </article>
+        <article class="featured">
+          <div class="profile-title"><h3>Standard</h3><span>推荐</span></div>
+          <p>独立完成真实项目，补齐测试、安全、审查、上下文和验证能力。</p>
+          <code>--level standard</code>
+        </article>
+        <article>
+          <div><h3>Pro</h3><p>维护长期工程，加入架构决策、设计模式、性能和代码库理解能力。</p></div>
+          <code>--level pro</code>
+        </article>
+        <article>
+          <div><h3>Team</h3><p>面向多人或多 Agent 协作，增加安全扫描、评估和工程治理。</p></div>
+          <code>--level team</code>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="workflow section">
+      <div class="section-heading">
+        <p class="overline">工作方式</p>
+        <h2>每一步都清楚，<br>每个改动都可追溯。</h2>
+      </div>
+      <ol>
+        <li><span>01</span><div><h3>检测项目</h3><p>识别 Agent、项目类型和目标目录。</p></div></li>
+        <li><span>02</span><div><h3>选择能力</h3><p>应用预设级别，或精确选择单个组件。</p></div></li>
+        <li><span>03</span><div><h3>审查计划</h3><p>写入前显示来源版本和全部目标文件。</p></div></li>
+        <li><span>04</span><div><h3>安全落盘</h3><p>记录文件与 SHA-256，卸载时保护用户修改。</p></div></li>
+      </ol>
     </section>
 
     <section class="trust">
-      <p>BUILT ON ECC</p><h2>尊重上游，也保护你的项目。</h2>
-      <p>Easy ECC 固定使用 ECC v2.0.0，并保留 MIT License 与上游署名。0.0.1 不自动安装高权限 MCP 或 Hooks。</p>
-      <a href="https://github.com/affaan-m/ECC">访问 ECC 上游仓库 ↗</a>
+      <div>
+        <p class="overline">Built on ECC</p>
+        <h2>尊重上游，也保护你的项目。</h2>
+      </div>
+      <div>
+        <p>Easy ECC 固定使用 ECC v2.0.0，并保留 MIT License 与上游署名。默认不自动安装高权限 MCP 或 Hooks。</p>
+        <a href="https://github.com/affaan-m/ECC">访问 ECC 上游仓库</a>
+      </div>
     </section>
   </main>
+
   <footer><span>Easy ECC · MIT License</span><span>Independent community project</span></footer>
   <script src="script.js"></script>
 </body>
